@@ -5324,7 +5324,7 @@ install_dropbear() {
 
 NO_START=0
 DROPBEAR_PORT=$DROPBEAR_PORT
-DROPBEAR_EXTRA_ARGS="-w"
+DROPBEAR_EXTRA_ARGS="-b /etc/bannerssh"
 EOF
 
     systemctl enable dropbear >/dev/null 2>&1
